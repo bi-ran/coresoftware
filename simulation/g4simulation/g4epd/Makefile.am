@@ -11,6 +11,7 @@ AM_LDFLAGS = \
   -L$(OFFLINE_MAIN)/lib
 
 pkginclude_HEADERS = \
+  CentralityOutputManager.h \
   PHG4EPDetector.h \
   PHG4EPSteppingAction.h \
   PHG4EPDSubsystem.h
@@ -19,6 +20,7 @@ lib_LTLIBRARIES = \
   libg4epd.la
 
 libg4epd_la_SOURCES = \
+  CentralityOutputManager.cc \
   PHG4EPDetector.cc \
   PHG4EPSteppingAction.cc \
   PHG4EPDSubsystem.cc
